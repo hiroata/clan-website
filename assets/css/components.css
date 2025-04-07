@@ -1,0 +1,306 @@
+/* 
+* CLAN Website - Components CSS
+* コンポーネントスタイルシート
+*/
+
+/* ===== ボタン ===== */
+.clan-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--clan-radius-md);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--clan-transition);
+    border: none;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  
+  .clan-btn-primary {
+    background-color: var(--clan-color-primary);
+    color: var(--clan-color-text-white);
+  }
+  
+  .clan-btn-primary:hover {
+    background-color: var(--clan-color-primary-light);
+    color: var(--clan-color-text-white);
+  }
+  
+  .clan-btn-secondary {
+    background-color: var(--clan-color-secondary);
+    color: var(--clan-color-text-white);
+  }
+  
+  .clan-btn-secondary:hover {
+    background-color: var(--clan-color-secondary-hover);
+    color: var(--clan-color-text-white);
+  }
+  
+  .clan-btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--clan-color-primary);
+    color: var(--clan-color-primary);
+  }
+  
+  .clan-btn-outline:hover {
+    background-color: var(--clan-color-primary);
+    color: var(--clan-color-text-white);
+  }
+  
+  .clan-btn-large {
+    padding: 1rem 2rem;
+    font-size: var(--clan-font-size-lg);
+  }
+  
+  .clan-btn-small {
+    padding: 0.5rem 1rem;
+    font-size: var(--clan-font-size-sm);
+  }
+  
+  /* ===== ヒーローセクション ===== */
+  .clan-hero {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    color: var(--clan-color-text-white);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: var(--clan-space-2xl) 0;
+  }
+  
+  .clan-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clan-gradient-overlay);
+    z-index: 1;
+  }
+  
+  .clan-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+  
+  .clan-hero h1 {
+    color: var(--clan-color-text-white);
+    margin-bottom: var(--clan-space-md);
+    font-size: var(--clan-font-size-3xl);
+  }
+  
+  .clan-hero p {
+    font-size: var(--clan-font-size-lg);
+    margin-bottom: var(--clan-space-lg);
+  }
+  
+  .clan-hero-buttons {
+    display: flex;
+    gap: var(--clan-space-md);
+    flex-wrap: wrap;
+  }
+  
+  /* ===== サービスカード ===== */
+  .clan-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--clan-space-lg);
+  }
+  
+  .clan-service-card {
+    background-color: var(--clan-color-bg-white);
+    border-radius: var(--clan-radius-md);
+    overflow: hidden;
+    box-shadow: var(--clan-box-shadow);
+    transition: var(--clan-transition);
+  }
+  
+  .clan-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--clan-box-shadow-lg);
+  }
+  
+  .clan-service-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .clan-service-content {
+    padding: var(--clan-space-md);
+  }
+  
+  .clan-service-card h3 {
+    color: var(--clan-color-primary);
+    margin-bottom: var(--clan-space-xs);
+  }
+  
+  .clan-service-card p {
+    color: var(--clan-color-text-light);
+    margin-bottom: var(--clan-space-md);
+  }
+  
+  /* ===== 特徴・メリットボックス ===== */
+  .clan-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--clan-space-lg);
+  }
+  
+  .clan-feature-box {
+    background-color: var(--clan-color-bg-white);
+    padding: var(--clan-space-lg);
+    border-radius: var(--clan-radius-md);
+    text-align: center;
+    box-shadow: var(--clan-box-shadow);
+  }
+  
+  .clan-feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--clan-space-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clan-color-bg-accent);
+    border-radius: var(--clan-radius-full);
+    color: var(--clan-color-primary);
+  }
+  
+  .clan-feature-box h3 {
+    margin-bottom: var(--clan-space-sm);
+  }
+  
+  /* ===== 実績カード ===== */
+  .clan-case-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--clan-space-lg);
+  }
+  
+  .clan-case-card {
+    background-color: var(--clan-color-bg-white);
+    border-radius: var(--clan-radius-md);
+    overflow: hidden;
+    box-shadow: var(--clan-box-shadow);
+    transition: var(--clan-transition);
+  }
+  
+  .clan-case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--clan-box-shadow-lg);
+  }
+  
+  .clan-case-content {
+    padding: var(--clan-space-md);
+  }
+  
+  .clan-case-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--clan-space-md);
+  }
+  
+  .clan-case-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--clan-radius-full);
+    overflow: hidden;
+    margin-right: var(--clan-space-md);
+  }
+  
+  .clan-case-title h3 {
+    margin-bottom: 0;
+  }
+  
+  .clan-case-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--clan-space-sm);
+    margin-bottom: var(--clan-space-md);
+  }
+  
+  .clan-case-stat {
+    background-color: var(--clan-color-bg-accent);
+    padding: var(--clan-space-xs) var(--clan-space-sm);
+    border-radius: var(--clan-radius-sm);
+    font-weight: 600;
+  }
+  
+  .clan-case-highlight {
+    font-size: var(--clan-font-size-2xl);
+    font-weight: 700;
+    color: var(--clan-color-secondary);
+    margin-bottom: var(--clan-space-sm);
+  }
+  
+  /* ===== CTA セクション ===== */
+  .clan-cta {
+    background: var(--clan-gradient-primary);
+    color: var(--clan-color-text-white);
+    text-align: center;
+    padding: var(--clan-space-xl) 0;
+  }
+  
+  .clan-cta h2 {
+    color: var(--clan-color-text-white);
+    margin-bottom: var(--clan-space-sm);
+  }
+  
+  .clan-cta p {
+    margin-bottom: var(--clan-space-lg);
+    font-size: var(--clan-font-size-lg);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ===== FAQアコーディオン ===== */
+  .clan-faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .clan-faq-item {
+    margin-bottom: var(--clan-space-sm);
+    border-radius: var(--clan-radius-md);
+    overflow: hidden;
+    box-shadow: var(--clan-box-shadow);
+  }
+  
+  .clan-faq-question {
+    padding: var(--clan-space-md);
+    background-color: var(--clan-color-bg-white);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .clan-faq-question::after {
+    content: '+';
+    font-size: var(--clan-font-size-xl);
+    transition: var(--clan-transition);
+  }
+  
+  .clan-faq-item.active .clan-faq-question::after {
+    transform: rotate(45deg);
+  }
+  
+  .clan-faq-answer {
+    padding: 0 var(--clan-space-md);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+  }
+  
+  .clan-faq-item.active .clan-faq-answer {
+    padding: 0 var(--clan-space-md) var(--clan-space-md);
+    max-height: 1000px; /* 十分な高さを設定 */
+  }

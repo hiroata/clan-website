@@ -1,0 +1,204 @@
+/* 
+* CLAN Website - Responsive CSS
+* レスポンシブ対応スタイルシート
+*/
+
+/* ===== タブレット対応 (992px未満) ===== */
+@media (max-width: 991px) {
+    /* 基本スタイル調整 */
+    h1 {
+      font-size: var(--clan-font-size-2xl);
+    }
+    
+    h2 {
+      font-size: var(--clan-font-size-xl);
+    }
+    
+    .clan-section {
+      padding: var(--clan-space-lg) 0;
+    }
+    
+    .clan-section-lg {
+      padding: var(--clan-space-xl) 0;
+    }
+    
+    /* ヘッダーとナビゲーション */
+    .clan-nav-list {
+      gap: var(--clan-space-sm);
+    }
+    
+    /* フッター */
+    .clan-footer-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--clan-space-lg);
+    }
+    
+    /* ヒーローセクション */
+    .clan-hero {
+      min-height: 500px;
+    }
+    
+    .clan-hero h1 {
+      font-size: var(--clan-font-size-2xl);
+    }
+    
+    /* サービスカード */
+    .clan-services {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    /* 実績カード */
+    .clan-case-cards {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+  
+  /* ===== モバイル対応 (768px未満) ===== */
+  @media (max-width: 767px) {
+    /* 基本スタイル調整 */
+    .clan-container {
+      padding: 0 var(--clan-space-sm);
+    }
+    
+    h1 {
+      font-size: var(--clan-font-size-xl);
+    }
+    
+    /* ヘッダーとナビゲーション */
+    .clan-nav,
+    .clan-action-buttons {
+      display: none;
+    }
+    
+    .clan-mobile-menu-btn {
+      display: flex;
+    }
+    
+    .clan-mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--clan-color-primary);
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--clan-transition);
+    }
+    
+    .clan-mobile-menu.open {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .clan-mobile-nav-list {
+      text-align: center;
+    }
+    
+    .clan-mobile-nav-list li {
+      margin-bottom: var(--clan-space-md);
+    }
+    
+    .clan-mobile-nav-list li a {
+      font-size: var(--clan-font-size-lg);
+      color: var(--clan-color-text-white);
+    }
+    
+    /* モバイルメニュー時のハンバーガーアイコン */
+    .clan-mobile-menu-btn.active span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    
+    .clan-mobile-menu-btn.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .clan-mobile-menu-btn.active span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    /* フッター */
+    .clan-footer-grid {
+      grid-template-columns: 1fr;
+      gap: var(--clan-space-md);
+    }
+    
+    .clan-footer-bottom {
+      flex-direction: column;
+      gap: var(--clan-space-sm);
+      text-align: center;
+    }
+    
+    /* ヒーローセクション */
+    .clan-hero {
+      min-height: 400px;
+      text-align: center;
+    }
+    
+    .clan-hero-content {
+      max-width: 100%;
+    }
+    
+    .clan-hero-buttons {
+      justify-content: center;
+    }
+    
+    /* サービスカード */
+    .clan-services {
+      grid-template-columns: 1fr;
+    }
+    
+    /* 特徴ボックス */
+    .clan-features {
+      grid-template-columns: 1fr;
+    }
+    
+    /* 実績カード */
+    .clan-case-cards {
+      grid-template-columns: 1fr;
+    }
+    
+    /* CTAセクション */
+    .clan-cta {
+      padding: var(--clan-space-lg) 0;
+    }
+  }
+  
+  /* ===== 小型モバイル対応 (480px未満) ===== */
+  @media (max-width: 479px) {
+    /* ヒーローセクション */
+    .clan-hero {
+      min-height: 350px;
+      padding: var(--clan-space-lg) 0;
+    }
+    
+    .clan-hero h1 {
+      font-size: var(--clan-font-size-lg);
+    }
+    
+    .clan-hero p {
+      font-size: var(--clan-font-size-base);
+    }
+    
+    .clan-hero-buttons {
+      flex-direction: column;
+      gap: var(--clan-space-sm);
+    }
+    
+    .clan-hero-buttons .clan-btn {
+      width: 100%;
+    }
+    
+    /* セクション見出し */
+    .clan-section-header h2 {
+      font-size: var(--clan-font-size-xl);
+    }
+    
+    .clan-section-header p {
+      font-size: var(--clan-font-size-base);
+    }
+  }
