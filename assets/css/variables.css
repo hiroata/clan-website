@@ -1,0 +1,68 @@
+/* 
+* CLAN Website - CSS Variables
+* 変数定義ファイル
+*/
+
+:root {
+  /* メインカラー */
+  --clan-color-primary: #000987;
+  --clan-color-primary-light: #2200ce;
+  --clan-color-secondary: #ff5722;
+  --clan-color-secondary-hover: #ef7f00;
+  
+  /* テキストカラー */
+  --clan-color-text: #333333;
+  --clan-color-text-light: #666666;
+  --clan-color-text-white: #ffffff;
+  
+  /* 背景色 */
+  --clan-color-bg-light: #f8f9fa;
+  --clan-color-bg-white: #ffffff;
+  --clan-color-bg-accent: #f2f3f9;
+  
+  /* グラデーション */
+  --clan-gradient-primary: linear-gradient(135deg, var(--clan-color-primary), var(--clan-color-primary-light));
+  --clan-gradient-overlay: linear-gradient(rgba(0, 9, 135, 0.7), rgba(34, 0, 206, 0.5));
+  
+  /* フォント */
+  --clan-font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Arial, Meiryo, sans-serif;
+  --clan-font-heading: var(--clan-font-sans);
+  
+  /* フォントサイズ */
+  --clan-font-size-xs: 0.75rem;   /* 12px */
+  --clan-font-size-sm: 0.875rem;  /* 14px */
+  --clan-font-size-base: 1rem;    /* 16px */
+  --clan-font-size-md: 1.125rem;  /* 18px */
+  --clan-font-size-lg: 1.25rem;   /* 20px */
+  --clan-font-size-xl: 1.5rem;    /* 24px */
+  --clan-font-size-2xl: 2rem;     /* 32px */
+  --clan-font-size-3xl: 2.5rem;   /* 40px */
+  
+  /* 行間 */
+  --clan-line-height-tight: 1.25;
+  --clan-line-height-normal: 1.5;
+  --clan-line-height-relaxed: 1.75;
+  
+  /* 幅設定 */
+  --clan-content-width: 1180px;
+  --clan-content-width-narrow: 800px;
+  
+  /* スペーシング */
+  --clan-space-xs: 0.5rem;   /* 8px */
+  --clan-space-sm: 1rem;     /* 16px */
+  --clan-space-md: 1.5rem;   /* 24px */
+  --clan-space-lg: 2rem;     /* 32px */
+  --clan-space-xl: 3rem;     /* 48px */
+  --clan-space-2xl: 4rem;    /* 64px */
+  
+  /* 角丸 */
+  --clan-radius-sm: 4px;
+  --clan-radius-md: 8px;
+  --clan-radius-lg: 16px;
+  --clan-radius-full: 9999px;
+  
+  /* その他 */
+  --clan-transition: all 0.3s ease;
+  --clan-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --clan-box-shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.15);
+}

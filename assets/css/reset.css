@@ -1,0 +1,51 @@
+/* 
+* CLAN Website - Reset CSS
+* ブラウザのデフォルトスタイルをリセット
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--clan-font-sans);
+  font-size: var(--clan-font-size-base);
+  line-height: var(--clan-line-height-normal);
+  color: var(--clan-color-text);
+  background-color: var(--clan-color-bg-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--clan-color-primary);
+  text-decoration: none;
+  transition: var(--clan-transition);
+}
+
+a:hover {
+  color: var(--clan-color-primary-light);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--clan-font-heading);
+  font-weight: 700;
+  line-height: var(--clan-line-height-tight);
+  margin-bottom: var(--clan-space-sm);
+  color: var(--clan-color-text);
+}
