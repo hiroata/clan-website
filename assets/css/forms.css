@@ -1,0 +1,175 @@
+/* 
+* CLAN Website - Forms CSS
+* フォーム用スタイル
+*/
+
+/* ===== フォームスタイル ===== */
+.clan-contact-form,
+.clan-seminar-form {
+  margin-bottom: var(--clan-space-xl);
+}
+
+.clan-form-group {
+  margin-bottom: var(--clan-space-md);
+}
+
+.clan-form-group label {
+  display: block;
+  margin-bottom: var(--clan-space-xs);
+  font-weight: 600;
+}
+
+.clan-required {
+  color: var(--clan-color-secondary);
+  font-size: var(--clan-font-size-xs);
+  margin-left: var(--clan-space-xs);
+}
+
+.clan-form-group input[type="text"],
+.clan-form-group input[type="email"],
+.clan-form-group input[type="tel"],
+.clan-form-group input[type="date"],
+.clan-form-group input[type="number"],
+.clan-form-group select,
+.clan-form-group textarea {
+  width: 100%;
+  padding: var(--clan-space-sm);
+  border: 1px solid var(--clan-color-bg-accent);
+  border-radius: var(--clan-radius-sm);
+  font-size: var(--clan-font-size-base);
+  transition: var(--clan-transition);
+}
+
+.clan-form-group input:focus,
+.clan-form-group select:focus,
+.clan-form-group textarea:focus {
+  outline: none;
+  border-color: var(--clan-color-primary);
+  box-shadow: 0 0 0 2px rgba(0, 9, 135, 0.1);
+}
+
+.clan-form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.clan-form-checkbox input[type="checkbox"] {
+  margin-right: var(--clan-space-xs);
+}
+
+.clan-form-checkbox label {
+  display: inline;
+  margin-bottom: 0;
+}
+
+.clan-form-submit {
+  margin-top: var(--clan-space-lg);
+  text-align: center;
+}
+
+/* エラーメッセージ */
+.clan-form-error {
+  color: #e53e3e;
+  font-size: var(--clan-font-size-sm);
+  margin-top: var(--clan-space-xs);
+}
+
+/* 送信完了メッセージ */
+.clan-form-success {
+  background-color: #f0fff4;
+  border-left: 4px solid #38a169;
+  padding: var(--clan-space-md);
+  margin-bottom: var(--clan-space-md);
+  border-radius: var(--clan-radius-sm);
+}
+
+/* ===== 無料相談ページ特有のスタイル ===== */
+.clan-seminar-benefits,
+.clan-seminar-flow {
+  margin-bottom: var(--clan-space-lg);
+}
+
+.clan-seminar-benefits h3,
+.clan-seminar-flow h3 {
+  margin-bottom: var(--clan-space-sm);
+  color: var(--clan-color-primary);
+}
+
+.clan-check-list {
+  list-style: none;
+}
+
+.clan-check-list li {
+  position: relative;
+  padding-left: var(--clan-space-md);
+  margin-bottom: var(--clan-space-xs);
+}
+
+.clan-check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--clan-color-primary);
+}
+
+.clan-numbered-list {
+  list-style-type: decimal;
+  margin-left: var(--clan-space-lg);
+}
+
+.clan-numbered-list li {
+  margin-bottom: var(--clan-space-xs);
+}
+
+.clan-seminar-testimonial {
+  background-color: var(--clan-color-bg-accent);
+  padding: var(--clan-space-md);
+  border-radius: var(--clan-radius-md);
+  margin-bottom: var(--clan-space-md);
+}
+
+.clan-seminar-testimonial blockquote {
+  font-style: italic;
+  margin: 0;
+}
+
+.clan-seminar-testimonial cite {
+  display: block;
+  margin-top: var(--clan-space-sm);
+  text-align: right;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* お問い合わせページの追加スタイル */
+.clan-contact-info {
+  margin-bottom: var(--clan-space-lg);
+}
+
+.clan-contact-method {
+  margin-bottom: var(--clan-space-md);
+}
+
+.clan-contact-method h3 {
+  font-size: var(--clan-font-size-md);
+  margin-bottom: var(--clan-space-xs);
+  color: var(--clan-color-primary);
+}
+
+/* お問い合わせ・無料相談フォームのレスポンシブ対応 */
+@media (max-width: 767px) {
+  .clan-two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .clan-contact-info,
+  .clan-contact-faq,
+  .clan-seminar-info,
+  .clan-seminar-form {
+    margin-bottom: var(--clan-space-lg);
+  }
+  
+  .clan-seminar-form .clan-card {
+    margin-top: var(--clan-space-lg);
+  }
+}
