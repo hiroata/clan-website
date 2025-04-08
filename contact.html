@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社CLAN - お問い合わせ。UTAGE構築代行サービスについてのお問い合わせはこちらから。">
+    <title>お問い合わせ | 株式会社CLAN - UTAGE構築代行サービス</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="clan-header">
+        <div class="clan-container">
+            <div class="clan-header-inner">
+                <div class="clan-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/cropped-cropped-ロゴ.png" alt="株式会社CLAN" width="120" height="40">
+                    </a>
+                </div>
+                
+                <nav class="clan-nav">
+                    <ul class="clan-nav-list">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="service.html">サービス</a></li>
+                        <li><a href="case.html">実績</a></li>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="blog/">ブログ</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="clan-action-buttons">
+                    <a href="contact.html" class="clan-btn clan-btn-primary active">お問い合わせ</a>
+                    <a href="free-seminar.html" class="clan-btn clan-btn-secondary">無料相談</a>
+                </div>
+                
+                <button class="clan-mobile-menu-btn" aria-label="メニュー">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- モバイルメニュー -->
+    <div class="clan-mobile-menu">
+        <div class="clan-mobile-menu-container">
+            <ul class="clan-mobile-nav-list">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="case.html">実績</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="blog/">ブログ</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="free-seminar.html">無料相談</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ページヘッダー -->
+        <section class="clan-page-header">
+            <div class="clan-container">
+                <h1>お問い合わせ</h1>
+            </div>
+        </section>
+        
+        <!-- お問い合わせセクション -->
+        <section class="clan-section">
+            <div class="clan-container clan-container-narrow">
+                <div class="clan-two-columns">
+                    <!-- お問い合わせフォーム -->
+                    <div class="clan-contact-form">
+                        <h2>お問い合わせフォーム</h2>
+                        <p class="clan-mb-md">UTAGE構築代行サービスについてのご質問やお見積りのご依頼は、下記フォームよりお気軽にお問い合わせください。</p>
+                        
+                        <form id="contactForm" action="thank-you.html" method="post">
+                            <div class="clan-form-group">
+                                <label for="name">お名前 <span class="clan-required">必須</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="clan-form-group">
+                                <label for="company">会社名</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="clan-form-group">
+                                <label for="email">メールアドレス <span class="clan-required">必須</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="clan-form-group">
+                                <label for="phone">電話番号</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="clan-form-group">
+                                <label for="subject">お問い合わせ項目 <span class="clan-required">必須</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">選択してください</option>
+                                    <option value="サービスについて">サービスについて</option>
+                                    <option value="料金について">料金について</option>
+                                    <option value="お見積り依頼">お見積り依頼</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </div>
+                            
+                            <div class="clan-form-group">
+                                <label for="message">お問い合わせ内容 <span class="clan-required">必須</span></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="clan-form-checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">個人情報保護方針に同意する <span class="clan-required">必須</span></label>
+                            </div>
+                            
+                            <div class="clan-form-submit">
+                                <button type="submit" class="clan-btn clan-btn-primary clan-btn-large">送信する</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- お問い合わせ情報 -->
+                    <div class="clan-contact-info">
+                        <h2>その他のお問い合わせ方法</h2>
+                        
+                        <div class="clan-contact-method">
+                            <h3><i class="fas fa-envelope"></i> メール</h3>
+                            <p>info@clanbiz.net</p>
+                            <p>※件名に「UTAGE構築サービスについて」と入れていただくとスムーズです。</p>
+                        </div>
+                        
+                        <div class="clan-contact-method">
+                            <h3><i class="fas fa-clock"></i> 対応時間</h3>
+                            <p>平日 9:00〜18:00</p>
+                            <p>※土日祝日、年末年始を除く</p>
+                        </div>
+                        
+                        <div class="clan-contact-faq clan-mt-lg">
+                            <h3>よくあるご質問</h3>
+                            <div class="clan-faq-list">
+                                <div class="clan-faq-item">
+                                    <div class="clan-faq-question">
+                                        返信はどのくらいで来ますか？
+                                    </div>
+                                    <div class="clan-faq-answer">
+                                        <p>通常、営業日1〜2日以内にご返信いたします。お急ぎの場合はお電話でのお問い合わせをお勧めします。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="clan-faq-item">
+                                    <div class="clan-faq-question">
+                                        見積もりは無料ですか？
+                                    </div>
+                                    <div class="clan-faq-answer">
+                                        <p>はい、お見積りは無料で承っております。お客様のご要望をお聞きした上で、最適なプランをご提案いたします。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA セクション -->
+        <section class="clan-cta">
+            <div class="clan-container">
+                <h2>UTAGE導入・運用、すべてお任せください</h2>
+                <p>Web集客のプロが、あなたのビジネスに最適なUTAGEファネルを構築・運用代行します。まずはお気軽にご相談ください。</p>
+                <a href="free-seminar.html" class="clan-btn clan-btn-secondary clan-btn-large">無料相談はこちら</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer class="clan-footer">
+        <div class="clan-container">
+            <div class="clan-footer-grid">
+                <div class="clan-footer-info">
+                    <img src="assets/images/logo/cropped-cropped-ロゴ.png" alt="株式会社CLAN" width="120" height="40">
+                    <p>〒892-0851<br>鹿児島県鹿児島市上竜尾町1番2号</p>
+                    <p>Email: info@clanbiz.net</p>
+                </div>
+                
+                <div class="clan-footer-links">
+                    <h3>サイトマップ</h3>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="service.html">サービス</a></li>
+                        <li><a href="case.html">実績</a></li>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="blog/">ブログ</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <li><a href="free-seminar.html">無料相談</a></li>
+                    </ul>
+                </div>
+                
+                <div class="clan-footer-social">
+                    <h3>ソーシャルメディア</h3>
+                    <div class="clan-social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clan-footer-bottom">
+                <p>&copy; 2025 株式会社CLAN All Rights Reserved.</p>
+                <ul class="clan-footer-policy">
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                    <li><a href="terms.html">利用規約</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 上に戻るボタン -->
+    <div class="clan-back-to-top" aria-label="ページの先頭へ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+</body>
+</html>
