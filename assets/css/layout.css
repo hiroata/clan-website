@@ -1,0 +1,226 @@
+/* 
+* CLAN Website - Layout CSS
+* レイアウト用スタイルシート
+*/
+
+/* ===== グリッドシステム ===== */
+.clan-grid {
+    display: grid;
+    gap: var(--clan-space-lg);
+  }
+  
+  .clan-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .clan-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .clan-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* ===== フレックスレイアウト ===== */
+  .clan-flex {
+    display: flex;
+  }
+  
+  .clan-flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .clan-flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clan-flex-between {
+    justify-content: space-between;
+  }
+  
+  .clan-flex-around {
+    justify-content: space-around;
+  }
+  
+  .clan-flex-column {
+    flex-direction: column;
+  }
+  
+  .clan-flex-grow {
+    flex-grow: 1;
+  }
+  
+  /* ===== カラム ===== */
+  .clan-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--clan-space-lg);
+  }
+  
+  .clan-column {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .clan-column-25 {
+    flex-basis: calc(25% - var(--clan-space-lg));
+  }
+  
+  .clan-column-33 {
+    flex-basis: calc(33.333% - var(--clan-space-lg));
+  }
+  
+  .clan-column-50 {
+    flex-basis: calc(50% - var(--clan-space-lg));
+  }
+  
+  .clan-column-66 {
+    flex-basis: calc(66.666% - var(--clan-space-lg));
+  }
+  
+  .clan-column-75 {
+    flex-basis: calc(75% - var(--clan-space-lg));
+  }
+  
+  /* ===== コンテナ ===== */
+  .clan-container {
+    width: 100%;
+    max-width: var(--clan-content-width);
+    margin: 0 auto;
+    padding: 0 var(--clan-space-md);
+  }
+  
+  .clan-container-narrow {
+    max-width: var(--clan-content-width-narrow);
+  }
+  
+  .clan-container-fluid {
+    width: 100%;
+    padding: 0 var(--clan-space-md);
+  }
+  
+  /* ===== セクション ===== */
+  .clan-section {
+    padding: var(--clan-space-xl) 0;
+  }
+  
+  .clan-section-lg {
+    padding: var(--clan-space-2xl) 0;
+  }
+  
+  .clan-section-sm {
+    padding: var(--clan-space-lg) 0;
+  }
+  
+  .clan-section-colored {
+    background-color: var(--clan-color-bg-light);
+  }
+  
+  .clan-section-accent {
+    background-color: var(--clan-color-bg-accent);
+  }
+  
+  .clan-section-dark {
+    background-color: var(--clan-color-primary);
+    color: var(--clan-color-text-white);
+  }
+  
+  /* ===== マージン ===== */
+  .clan-mt-xs { margin-top: var(--clan-space-xs); }
+  .clan-mt-sm { margin-top: var(--clan-space-sm); }
+  .clan-mt-md { margin-top: var(--clan-space-md); }
+  .clan-mt-lg { margin-top: var(--clan-space-lg); }
+  .clan-mt-xl { margin-top: var(--clan-space-xl); }
+  
+  .clan-mb-xs { margin-bottom: var(--clan-space-xs); }
+  .clan-mb-sm { margin-bottom: var(--clan-space-sm); }
+  .clan-mb-md { margin-bottom: var(--clan-space-md); }
+  .clan-mb-lg { margin-bottom: var(--clan-space-lg); }
+  .clan-mb-xl { margin-bottom: var(--clan-space-xl); }
+  
+  .clan-ml-xs { margin-left: var(--clan-space-xs); }
+  .clan-ml-sm { margin-left: var(--clan-space-sm); }
+  .clan-ml-md { margin-left: var(--clan-space-md); }
+  .clan-ml-lg { margin-left: var(--clan-space-lg); }
+  .clan-ml-xl { margin-left: var(--clan-space-xl); }
+  
+  .clan-mr-xs { margin-right: var(--clan-space-xs); }
+  .clan-mr-sm { margin-right: var(--clan-space-sm); }
+  .clan-mr-md { margin-right: var(--clan-space-md); }
+  .clan-mr-lg { margin-right: var(--clan-space-lg); }
+  .clan-mr-xl { margin-right: var(--clan-space-xl); }
+  
+  /* ===== パディング ===== */
+  .clan-p-xs { padding: var(--clan-space-xs); }
+  .clan-p-sm { padding: var(--clan-space-sm); }
+  .clan-p-md { padding: var(--clan-space-md); }
+  .clan-p-lg { padding: var(--clan-space-lg); }
+  .clan-p-xl { padding: var(--clan-space-xl); }
+  
+  /* ===== テキスト配置 ===== */
+  .clan-text-center { text-align: center; }
+  .clan-text-left { text-align: left; }
+  .clan-text-right { text-align: right; }
+  
+  /* ===== レスポンシブヘルパー ===== */
+  .clan-hide-sm {
+    display: none;
+  }
+  
+  .clan-show-sm {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .clan-hide-sm {
+      display: initial;
+    }
+    
+    .clan-show-sm {
+      display: none;
+    }
+  }
+  
+  /* ===== カスタムレイアウト ===== */
+  .clan-two-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--clan-space-lg);
+  }
+  
+  @media (min-width: 768px) {
+    .clan-two-columns {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .clan-three-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--clan-space-lg);
+  }
+  
+  @media (min-width: 768px) {
+    .clan-three-columns {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* ===== カード型レイアウト ===== */
+  .clan-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--clan-space-lg);
+  }
+  
+  .clan-card {
+    background-color: var(--clan-color-bg-white);
+    border-radius: var(--clan-radius-md);
+    overflow: hidden;
+    box-shadow: var(--clan-box-shadow);
+  }
+  
+  .clan-card-content {
+    padding: var(--clan-space-md);
+  }
